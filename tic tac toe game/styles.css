@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #02122D, #1C4892);
+    overflow: hidden; 
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    width: 45vmin; 
+    height: 45vmin; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1vmin; 
+    justify-content: center; 
+    align-items: center; 
+    margin: auto;
+   
+}
+
+.button-option {
+    background-color: #ffffff;
+    height: 12vmin; 
+    width: 12vmin; 
+    border-radius: 8px;
+    font-size: 6vmin; 
+    color: #1C4892;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#restart {
+    font-size: 1.3em;
+    padding: 15px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: #0a0027;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    margin: 1.5em auto 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+.popup {
+    background: linear-gradient(135deg, #02122D, #1C4892);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 6vmin; 
+    color: #ffffff;
+    text-align: center;
+}
+
+#new-game {
+    font-size: 0.6em;
+    padding: 0.5em 1em;
+    background-color: #0a0027;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#message {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+}
+
+.popup.hide {
+    display: none;
+}
+
+.mode-selection {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.mode-button {
+    font-size: 1em;
+    padding: 20px;
+    background-color: #0a0027;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex; 
+    align-items: center; 
+}
+.mode-button i {
+    margin-right: 10px; 
+}
+.mode-button:hover {
+    background-color: #1C4892;
+}
+
+#restart:hover {
+    background-color: #1C4892;
+}
+
+#new-game:hover {
+    background-color: #1C4892;
+}
+
+.scoreboard {
+    margin-top: 4em; 
+    text-align: center; 
+    color: #ffffff;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center; 
+    gap: 2em; 
+}
+
+
+.scoreboard p {
+    margin: 0.5em 0; /
+}
+.fas.fa-user-group{
+    color: #ffffff;
+}
+.fas.fa-robot{
+    color: #ffffff;
+}
